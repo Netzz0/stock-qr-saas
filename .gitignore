@@ -1,0 +1,66 @@
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.suo
+*.user
+*.sln.docstates
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# npm
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+.eslintcache
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+PostgreSQLData/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Build outputs
+build/
+dist/
+.next/
+out/
+
+# Docker
+docker-compose.override.yml
+
+# Testing
+.nyc_output/
+.coverage/
+coverage/
+
+# OS
+Thumbs.db
+.DS_Store
