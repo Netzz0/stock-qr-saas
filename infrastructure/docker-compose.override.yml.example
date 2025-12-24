@@ -1,0 +1,22 @@
+# Override configuration for local development
+# Copy to docker-compose.override.yml and customize
+
+version: '3.8'
+
+services:
+  api:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=stock_qr_db;Username=stock_qr_user;Password=stock_qr_password_dev
+      Redis__Connection: redis:6379
+      AWS__Endpoint: http://minio:9000
+      # Add other environment variables as needed
+    # Uncomment to rebuild on changes
+    # build:
+    #   context: ./backend
+    #   dockerfile: Dockerfile
+
+  frontend:
+    environment:
+      VITE_API_URL: http://localhost:5000
+      VITE_ENABLE_ANALYTICS: 'false'
